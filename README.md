@@ -15,7 +15,7 @@ To install artifactory, two methods are available to you:
    if you are using AWS, you just need to:
 * Clone the repository: [https://github.com/franck-art/artifactory](https://github.com/franck-art/artifactory)
 
-* load the artifactory-stack.yml file into AWS through the cloud formation service
+* load the `artifactory-stack.yml` file into AWS through the cloud formation service
 2. With docker Container
 
 just follow the following procedure or follow the file artifactory-pro in my github repositories [https://github.com/franck-art/artifactory/blob/master/artifactory-pro](https://github.com/franck-art/artifactory/blob/master/artifactory-pro)
@@ -35,7 +35,7 @@ docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/art
 #### home page Artifactory
 
 To access the artifactory home page, type the url in your browser:
-[http://@ip:8082](http://@ip:8082)
+`http://@ip:8082`
 
 * NB: check that port 8082 is open
 
@@ -55,7 +55,7 @@ On the client machine, the one that will login,push and pull:
   
 ```
 
-* restart the docker service: **sudo service docker restart**
+* restart the docker service: `sudo service docker restart`
 
 ###### Docker tag, login, push, pull
 
