@@ -20,15 +20,17 @@ To install artifactory, two methods are available to you:
 
 just follow the following procedure or follow the file artifactory-pro in my github repositories [https://github.com/franck-art/artifactory/blob/master/artifactory-pro](https://github.com/franck-art/artifactory/blob/master/artifactory-pro)
 
-  mkdir -p $JFROG_HOME/artifactory/var/etc/
+```
+mkdir -p $JFROG_HOME/artifactory/var/etc/
 
-  cd $JFROG_HOME/artifactory/var/etc/
+cd $JFROG_HOME/artifactory/var/etc/
 
-  touch ./system.yaml
+touch ./system.yaml
 
-  chown -R 1030:1030 $JFROG_HOME/artifactory/var
+chown -R 1030:1030 $JFROG_HOME/artifactory/var
 
-  docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-pro:latest
+docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-pro:latest
+```
 
 #### home page Artifactory
 
