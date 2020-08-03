@@ -30,7 +30,7 @@ just follow the following procedure or follow the file artifactory-pro in my git
 
   docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-pro:latest
 
-#### home page
+#### home page Artifactory
 
 To access the artifactory home page, type the url in your browser:
 [http://@ip:8082](http://@ip:8082)
