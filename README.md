@@ -47,10 +47,13 @@ In our case, we used the HTTP method because we did not configure a certificate.
 On the client machine, the one that will login,push and pull:
 
 * Edit/create the daemon.json file locate in /etc/docker/daemon.json and add these lines
-  
+
+```
   {
     "insecure-registries" : ["@ip-public_registry:8082"]
   }
+  
+```
 
 * restart the docker service: **sudo service docker restart**
 
