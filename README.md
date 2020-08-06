@@ -39,6 +39,8 @@ To access the artifactory home page, type the url in your browser:
 
 * NB: check that port 8082 is open
 
+* Default credential: `admin/password`
+
 ##### Usage with HTTP Request
 
 Two methods are used to communicate with the registry: HTTP and HTTPS
