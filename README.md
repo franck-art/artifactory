@@ -35,7 +35,7 @@ docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/art
 #### home page Artifactory
 
 To access the artifactory home page, type the url in your browser:
-`http://@ip:8082`
+`http://@ip:8082/ui`
 
 * NB: check that port 8082 is open
 
