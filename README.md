@@ -32,7 +32,7 @@ chown -R 1030:1030 $JFROG_HOME/artifactory/var
 docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-pro:latest
 ```
 
-#### home page Artifactory
+### home page Artifactory
 
 To access the artifactory home page, type the url in your browser:
 `http://@ip:8082/ui`
@@ -41,7 +41,7 @@ To access the artifactory home page, type the url in your browser:
 
 * Default credential: `admin/password`
 
-##### Usage with HTTP Request
+### Usage with HTTP Request
 
 Two methods are used to communicate with the registry: HTTP and HTTPS
 In our case, we used the HTTP method because we did not configure a certificate.
@@ -59,7 +59,7 @@ On the client machine, the one that will login,push and pull:
 
 * restart the docker service: `sudo service docker restart`
 
-###### Docker tag, login, push, pull
+### Docker tag, login, push, pull
 
 after the *insecure-registries* mode has been activated, we can push our docker images
 
